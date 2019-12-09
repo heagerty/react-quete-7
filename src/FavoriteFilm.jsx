@@ -34,7 +34,8 @@ class FavoriteFilm extends Component {
             body: JSON.stringify(this.state),
         };
 
-        const url = "http://campus-bordeaux.ovh:3001/api/quests/movies/";
+        //const url = "http://campus-bordeaux.ovh:3001/api/quests/movies/";
+        const url = "https://post-a-form.herokuapp.com/api/movies/";
 
         fetch(url, config)
             .then(res => res.json())
